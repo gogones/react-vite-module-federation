@@ -7,7 +7,9 @@ import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import AccountCircle from '@mui/icons-material/AccountCircle';
+import {useNavigate} from "react-router-dom";
 export function Navbar() {
+    const navigate = useNavigate()
     const [anchorEl, setAnchorEl] = React.useState(null);
 
     const handleMenu = (event) => {
@@ -20,7 +22,7 @@ export function Navbar() {
     return (
         <AppBar>
             <Toolbar>
-                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} onClick={() => navigate('/')}>
                     Application Name
                 </Typography>
 
