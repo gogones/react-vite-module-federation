@@ -10,6 +10,7 @@ export default defineConfig({
       name: "remote_app",
       filename: "remoteEntry.js",
       exposes: {
+        './NavbarPortal': './src/App',
         './PortalApp': './src/App'
       },
       shared: ['react','react-dom']
