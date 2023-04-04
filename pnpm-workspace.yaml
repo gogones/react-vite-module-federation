@@ -1,4 +1,4 @@
-+ packages
-  + host
-  + remote
-  + portal
+packages:
+  - 'host'
+  - 'portal'
+  - 'msr'

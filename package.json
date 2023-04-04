@@ -4,8 +4,8 @@
     "version": "1.0.0",
     "workspaces": [
       "host",
-      "remote",
-      "portal"
+      "portal",
+      "msr"
     ],
     "scripts": {
       "build-all": "pnpm --parallel -r build",

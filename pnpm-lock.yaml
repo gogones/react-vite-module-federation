@@ -27,7 +27,7 @@ importers:
       '@vitejs/plugin-react': 3.1.0_vite@4.2.1
       vite: 4.2.1
 
-  portal:
+  msr:
     specifiers:
       '@emotion/react': ^11.10.6
       '@emotion/styled': ^11.10.6
@@ -54,17 +54,27 @@ importers:
       '@vitejs/plugin-react': 3.1.0_vite@4.2.1
       vite: 4.2.1
 
-  remote:
+  portal:
     specifiers:
-      '@types/react': ^18.0.17
-      '@types/react-dom': ^18.0.6
-      '@vitejs/plugin-react': ^3.0.0
+      '@emotion/react': ^11.10.6
+      '@emotion/styled': ^11.10.6
+      '@mui/icons-material': ^5.11.11
+      '@mui/material': ^5.11.15
+      '@types/react': ^18.0.33
+      '@types/react-dom': ^18.0.11
+      '@vitejs/plugin-react': ^3.1.0
       react: ^18.2.0
       react-dom: ^18.2.0
-      vite: ^4.0.3
+      react-router-dom: ^6.10.0
+      vite: ^4.2.1
     dependencies:
+      '@emotion/react': 11.10.6_7b8ae5d34ed122987167c657b3c1d5cc
+      '@emotion/styled': 11.10.6_b2bf41c60c29265a47e1130c68f95e2b
+      '@mui/icons-material': 5.11.11_1e1e9767cdce2d948712fda7e064ffd3
+      '@mui/material': 5.11.15_ce38518167de5b350692b5a41c2eb781
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+      react-router-dom: 6.10.0_react-dom@18.2.0+react@18.2.0
     devDependencies:
       '@types/react': 18.0.33
       '@types/react-dom': 18.0.11
