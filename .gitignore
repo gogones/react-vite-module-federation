@@ -1,7 +1,4 @@
-/host/dist/
-/remote/dist/
-/portal/dist/
-/host/node_modules
-/remote/node_modules
-/portal/node_modules
+/**/dist/
+/**/node_modules
+/**/.env.local
 /node_modules
