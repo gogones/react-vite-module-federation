@@ -10,18 +10,11 @@ export default defineConfig({
       name: 'app',
       remotes: {
         remoteApp: 'http://localhost:5001/assets/remoteEntry.js',
-        // remoteApp: {
-        //   externalType: 'promise',
-        //   external: 'http://localhost:5001/assets/remoteEntry.js'
-        // }
       },
       shared: ['react','react-dom']
     })
   ],
   build: {
-    // modulePreload: false,
     target: 'esnext',
-    // minify: false,
-    // cssCodeSplit: false
   }
 })
