@@ -12,6 +12,7 @@ import Copyright from "./Copyright";
 import theme from "./theme";
 import {useNavigate, BrowserRouter, Routes, Route} from 'react-router-dom'
 import {Navbar} from "./Navbar";
+import viteLogo from '/vite.svg'
 
 const cards = [
     {
@@ -105,7 +106,10 @@ function Main() {
                                         sx={{
                                             p: 2,
                                         }}
-                                        image="/vite.svg"
+                                        {/* You can use like this */}
+                                        image={viteLogo}
+                                        {/* or this */}
+                                        // image={`${import.meta.env.BASE_URL}/vite.svg`}
                                         alt="random"
                                     />
                                     <CardContent sx={{ flexGrow: 1 }}>
