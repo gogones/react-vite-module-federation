@@ -4,3 +4,4 @@ portal/dist
 host/node_modules
 remote/node_modules
 portal/node_modules
+node_modules
