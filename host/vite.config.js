@@ -14,6 +14,7 @@ export default defineConfig(({mode}) => {
         name: 'app',
         remotes: {
           portalApp: env.APP_PORTAL_ENTRY,
+          msrApp: env.APP_MSR_ENTRY,
         },
         shared: ['react', 'react-dom']
       })
