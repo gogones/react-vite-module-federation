@@ -36,12 +36,16 @@ const cards = [
 export default function App() {
     return (
             <BrowserRouter>
+                <ThemeProvider theme={theme}>
+                <CssBaseline />
+                <Navbar />
+
                 {/* Routes nest inside one another. Nested route paths build upon
                 parent route paths, and nested route elements render inside
                 parent route elements. See the note about <Outlet> below. */}
                 <Routes>
                     <Route path="/" element={<Main />}>
-                        {/*<Route index element={<Home />} />*/}
+                        {/*<Route element={<Main />} />*/}
                         {/*<Route path="about" element={<About />} />*/}
                         {/*<Route path="dashboard" element={<Dashboard />} />*/}
 
@@ -51,6 +55,7 @@ export default function App() {
                         {/*<Route path="*" element={<NoMatch />} />*/}
                     </Route>
                 </Routes>
+                </ThemeProvider>
             </BrowserRouter>
     );
 }
@@ -58,10 +63,7 @@ export default function App() {
 function Main() {
     const navigate = useNavigate();
     return (
-        <ThemeProvider theme={theme}>
-            <Box>
-            <CssBaseline />
-            <Navbar />
+        <Box>
             <main>
                 {/* Hero unit */}
                 <Box
@@ -88,6 +90,7 @@ function Main() {
                         </Typography>
                     </Container>
                 </Box>
+
                 <Container sx={{ py: 8 }} maxWidth="xl">
                     {/* End hero unit */}
                     <Grid container spacing={4}>
@@ -120,6 +123,7 @@ function Main() {
                     </Grid>
                 </Container>
             </main>
+
             {/* Footer */}
             <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
                 <Typography variant="h6" align="center" gutterBottom>
@@ -137,7 +141,6 @@ function Main() {
             </Box>
             {/* End footer */}
 
-            </Box>
-        </ThemeProvider>
+        </Box>
     );
 }
