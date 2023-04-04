@@ -106,9 +106,9 @@ function Main() {
                                         sx={{
                                             p: 2,
                                         }}
-                                        {/* You can use like this */}
                                         image={viteLogo}
-                                        {/* or this */}
+                                         // You can use like this
+                                         // or this
                                         // image={`${import.meta.env.BASE_URL}/vite.svg`}
                                         alt="random"
                                     />
